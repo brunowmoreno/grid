@@ -26,7 +26,7 @@
       <div class="container">
         <div class="intro">
           <a href="/grid"><h1>grid</h1></a>
-          <p>A simple guide to responsive design.<br>Made by <a href="/" target="_blank">Adam Kaplan</a>.</p>
+          <p>Um guia simples para design responsivo.<br>Feito por <a href="http://www.adamkaplan.me/" target="_blank">Adam Kaplan</a>. Vers&atilde;o brasileira por <a href="http://webfatorial.com/">webfatorial</a>.</p>
         </div>
         <img src="/images/mobile.png" alt="Intro" class="mobile animated fadeInUp">
       </div>
@@ -35,9 +35,8 @@
     <section>
       <div class="container">
         <img src="/images/mobile-first.png" alt="Mobile First" class="rwd">
-        <h1>Why bother with responsive?</h1>
-        <p>We want our websites to be useable on all devices by responding to
-        the user’s behavior, screen size and screen orientation.</p>
+        <h1>Por que se importar com responsivo?</h1>
+        <p>Queremos que nossos sites sejam us&aacute;veis em todos os dispositivos, respondendo ao comportamento e tamanho e orienta&ccedil;&atilde;o de tela do visitante.</p>
       </div>
     </section>
 
@@ -47,24 +46,18 @@
 
     <section>
       <div class="container">
-        <h1>A Fragmented World</h1>
-        <p><a href="http://opensignal.com/reports/fragmentation-2013/" target="_blank">As of 2013</a>, there are thousands
-        of different devices and screen sizes that browse the internet, so it’s impossible to design layouts to target them
-        all. Instead, we must take a more fluid approach to design.</p>
+        <h1>Um mundo fragmentado</h1>
+        <p><a href="http://opensignal.com/reports/fragmentation-2013/" target="_blank">Desde 2013</a> existem milhares de diferentes dispositivos e tamanhos de tela que acessam a internet, tornando imposs&iacute;vel projetar layouts para todos. Ao inv&eacute;s disso, precisamos adotar uma abordagem mais fluida ao design.</p>
       </div>
     </section>
 
     <section>
       <div class="container">
         <h1>Mobile First</h1>
-        <p>The term “mobile first” gets thrown around a lot lately. What it really means is to start with mobile
-        styles and layer on styles optimized for larger screens only as needed. In other words, your mobile styles become
-        the default and you no longer have to override them later. It’s much simpler!</p>
+        <p>O termo "mobile first" (m&oacute;vel primeiro) tem aparecido bastante ultimamente. O que isso realmente significa &eacute; come&ccedil;ar com os estilos para mobile e ir avan&ccedil;ando em estilos otimizados para telas maiores apenas quando necess&aacute;rio. Em outras palavras, seus estilos para dispositivos m&oacute;veis se tornam o padr&atilde;o e voc&ecirc; n&atilde;o os precisa mais sobrescrever depois. &eacute; muito mais simples!</p>
         <hr>
         <blockquote>
-          <p>By assuming a flexible but simple layout by default, you can better guard against browsers—with viewports wide
-          and small—that aren’t quite capable of the full responsive layout. So when we’re talking about layout, “mobile first”
-          really means “progressive enhancement.”</p>
+          <p>Assumindo um layout flexível, mas simples, por padrão, você pode melhor se resguardar contra navegadores &#8212; com viewports pequenas e grandes &#8212; que não são totalmente capazes em relação a layout responsivo. Então, quando falamos sobre layout, "mobile first" realmente significa "progressive enhancement" (melhoramento progressivo).</p>
           <cite>—Ethan Marcotte</cite>
         </blockquote>
       </div>
@@ -78,10 +71,8 @@
 
     <section>
       <div class="container">
-        <h1>Min-width Media Queries</h1>
-        <p>Introduce layout-specific rules only when you need them. Use <code>min-width</code> to layer complexity on your
-        layout as the viewport widens. It’s easier to have all the media queries nearby, rather than at the end
-        of the stylesheet or in a separate document.</p>
+        <h1>Media queries com min-width</h1>
+        <p>Introduza regras específicas ao layout somente quando precisar delas. Use <code>min-width</code> para lidar com complexidade &agrave; medida em que a viewport se torna maior. &Eacute; mais f&aacute;cil ter todas as media queries pr&oacute;ximas ao inv&eacute;s de no final da folha de estilos ou em documento separado.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8969695.js"></script>
       </div>
@@ -90,10 +81,8 @@
     <section>
       <div class="container">
         <div class="circle">1</div>
-        <h1>Not All Browsers are Created Equal</h1>
-        <p>Browsers will render your CSS differently. To avoid this, it’s a good idea to use a modern
-        alternative to a reset like <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>,
-        which will render elements more consistently cross-browser. Remember to include it as-is before your stylesheet.</p>
+        <h1>Nem todos os navegadores s&atilde;o iguais</h1>
+        <p>Navegadores ir&atilde;o renderizar seu CSS de maneira diferente. Para evitar isso, &eacute; uma boa ideia usar uma alternativa moderna ao reset, como <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>, que ir&aacute; renderizar seus elementos mais consistentemente entre os navegadores (cross-browser). Lembre-se de inclu&iacute;-lo antes de sua folha de estilos.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8969436.js"></script>
       </div>
@@ -102,8 +91,8 @@
     <section>
       <div class="container">
         <div class="circle">2</div>
-        <h1>Add the Viewport Meta Tag</h1>
-        <p>Place in the <code>&lt;head&gt;</code> of your HTML. This enables use of media queries for cross-device layouts.</p>
+        <h1>Adicione a meta tag Viewport</h1>
+        <p>Coloque na <code>&lt;head&gt;</code> de seu HTML. Isso habilita o uso de media queries para layouts cross-device.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8243831.js"></script>
       </div>
@@ -118,33 +107,31 @@
     <section>
       <div class="container">
         <h1>CSS Box Model</h1>
-        <p>It’s important to understand the basics, like how elements are generated and behave in the browser, before
-        diving into responsive web design. The CSS Box Model consists of four distinct parts.</p>
+        <p>&Eacute; importante entender o b&aacute;sico, tal como os elementos s&atilde;o gerados e se comportam no navegador, antes de se aprofundar em web design responsivo.  O CSS Box Model consiste em quatro partes diferentes.</p>
         <hr>
-
         <div class="row clearfix">
           <div class="column fourth">
             <img src="/images/content.png" alt="content">
-            <h3 class="content">Content</h3>
-            <p>The content of the box, where text and images appear.</p>
+            <h3 class="content">Conte&uacute;do</h3>
+            <p>O conte&uacute;do do box, onde texto e imagem aparecem.</p>
           </div>
 
           <div class="column fourth">
             <img src="/images/padding.png" alt="padding">
             <h3 class="padding">Padding</h3>
-            <p>Clears an area around the content.</p>
+            <p>&Aacute;rea ao redor do conte&uacute;do.</p>
           </div>
 
           <div class="column fourth">
             <img src="/images/border.png" alt="border">
             <h3 class="border">Border</h3>
-            <p>A border that goes around the padding.</p>
+            <p>Borda que vai ao redor do padding.</p>
           </div>
 
           <div class="column fourth">
             <img src="/images/margin.png" alt="margin">
             <h3 class="margin">Margin</h3>
-            <p>Clears an area around the border.</p>
+            <p>&Aacute;rea ao redor da borda.</p>
           </div>
         </div>
       </div>
@@ -154,7 +141,8 @@
       <div class="container">
         <div class="circle">3</div>
         <h1>Use box-sizing: border-box</h1>
-        <p>Place at the top of your <code>CSS</code> file. The <code>*</code> will target all elements on the page.</p>
+        <p>Coloque no in&iacute;cio de seu arquivo <code>CSS</code>. O <code>*</code> 
+        vai afetar todos os elementos na p&aacute;gina.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8247563.js"></script>
       </div>
@@ -162,23 +150,22 @@
 
     <section>
       <div class="container">
-        <h1>Your Choice</h1>
-        <p><a href="http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug" target="_blank">What was once a bug</a>
-        is now a widely used CSS property. It basically means you can choose whether or not to include borders and padding in
-        the width of your content.</p>
+        <h1>Sua Escolha</h1>
+        <p><a href="http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug" target="_blank">O que antes era um bug</a> 
+        &eacute; agora uma propriedade CSS amplamente usada. Basicamente, isso significa que voc&ecirc; pode escolher entre incluir ou n&atilde;o border e padding no cálculo da largura de seu conte&uacute;do.</p>
         <hr>
 
         <div class="row clearfix">
           <div class="column half">
             <img src="/images/without-box-model.png" alt="Without Box Model">
-            <h3>Without box-sizing: border-box</h3>
-            <p>Margin, borders and padding are drawn outside the set width of your content.</p>
+            <h3>Sem box-sizing: border-box</h3>
+            <p>Margem, bordas e padding s&atilde;o desenhados fora da especifica&ccedil;&atilde;o de largura do conte&uacute;do.</p>
           </div>
 
           <div class="column half">
             <img src="/images/with-box-model.png" alt="With Box Model">
-            <h3>With box-sizing: border-box</h3>
-            <p>Borders and padding are drawn inside the set width of your content. The margin is drawn outside.</p>
+            <h3>Com box-sizing: border-box</h3>
+            <p>Bordas e padding s&atilde;o desenhados dentro da especifica&ccedil;&atilde;o da largura do conte&uacute;do. A margem &eacute; desenhada fora.</p>
           </div>
         </div>
       </div>
@@ -187,9 +174,8 @@
     <section>
       <div class="container">
         <div class="circle">4</div>
-        <h1>Create a Container</h1>
-        <p>A container holds all elements and controls the page’s maximum width. Using a container will make designing for
-        responsive easier!</p>
+        <h1>Crie um cont&ecirc;iner</h1>
+        <p>Um cont&ecirc;iner det&eacute;m todos os elementos e controla a largura m&aacute;xima da p&aacute;gina. Usando um cont&ecirc;iner voc&ecirc; faz de projetos de design responsivo mais f&aacute;ceis!</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8246124.js"></script>
         <script src="https://gist.github.com/aekaplan/8246032.js"></script>
@@ -205,9 +191,8 @@
     <section>
       <div class="container">
         <div class="circle">5</div>
-        <h1>Create a Column</h1>
-        <p>With mobile first, columns are <code>block</code> level (takes up the full width available) by default. No
-        additional styles needed!</p>
+        <h1>Crie uma coluna</h1>
+        <p>Com mobile first, colunas s&atilde;o n&iacute;vel de bloco (<code>block</code>), por padr&atilde;o tomando a largura total dispon&iacute;vel. Nenhum estilo adicional &eacute; necess&aacute;rio!</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8978649.js"></script>
       </div>
@@ -236,9 +221,8 @@
     <section>
       <div class="container">
         <div class="circle">6</div>
-        <h1>Create Column Sizes</h1>
-        <p>On larger screens, columns gain <code>float: left</code> in order to stack content horizontally. Columns now
-        use padding for gutters, so you no longer need to worry about removing margins.</p>
+        <h1>Crie tamanhos de colunas</h1>
+        <p>Em telas grandes, colunas obt&ecirc;m <code>float: left</code> a fim de "empilhar" (stack) o conte&uacute;do horizontalmente. Colunas agora usam padding para espa&ccedil;amento, ent&atilde;o voc&ecirc; n&atilde;o precisa mais se preocupar em remover margens.</p>
         <hr>
       </div>
 
@@ -325,10 +309,8 @@
     <section>
       <div class="container">
         <div class="circle">7</div>
-        <h1>Create Rows</h1>
-        <p>Columns are wrapped in rows to prevent other elements from stacking next to them, otherwise known as clearing
-        issues. Rows are cleared using the popular <code>clearfix</code>, which was created by
-        <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">Nicolas Gallagher</a>.</p>
+        <h1>Crie linhas</h1>
+        <p>Colunas s&atilde;o envoltas em linhas para evitar que outros elementos fiquem "empilhados" (stacking) pr&oacute;ximo a elas, isso tamb&eacute;m conhecido como "quest&otilde;es de limpeza" (clearing issues). Linhas recebem clear usando o popular <code>clearfix</code>, criado por <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">Nicolas Gallagher</a>.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/8430571.js"></script>
         <script src="https://gist.github.com/aekaplan/8467436.js"></script>
@@ -361,9 +343,8 @@
 
     <section>
       <div class="container">
-        <h1>Flow Opposite</h1>
-        <p>Add the class <code>.flow-opposite</code> to columns where you want content to display first on mobile but
-        appear on the right on larger screens.</p>
+        <h1>Fluxo Oposto</h1>
+        <p>Adicione a classe <code>.flow-opposite</code> em colunas nas quais voc&ecirc; quer o conte&uacute;do apare&ccedil;a primeiro em mobile, mas apare&ccedil;am &agrave; direita em telas maiores.</p>
         <hr>
         <script src="https://gist.github.com/aekaplan/9025378.js"></script>
         <script src="https://gist.github.com/aekaplan/9025387.js"></script>
@@ -386,12 +367,10 @@
 
     <section>
       <div class="container">
-        <h1>Practice Makes Perfect</h1>
-        <p>By following these simple steps, you are on the path to responsive
-        web design mastery. Keep practicing and help make the web a better,
-        more useable place.</p>
+        <h1>A pr&aacute;tica leva &agrave; perfei&ccedil;&atilde;o</h1>
+        <p>Seguindo esses simples passos, voc&ecirc; est&aacute; no caminho para dominar o web design responsivo. Continue a praticar e ajude a tornar a web um lugar melhor e mais us&aacute;vel.</p>
         <hr>
-        <p><a href="https://github.com/aekaplan/grid" target="_blank" class="button">View the Code</a></p>
+        <p><a href="https://github.com/webfatorial/grid" target="_blank" class="button">Veja o c&oacute;digo</a></p>
       </div>
     </section>
 
@@ -399,7 +378,7 @@
       <div class="container">
         <div class="row clearfix">
           <div class="column half">
-            <h3>Further Reading</h3>
+            <h3>Leitura Complementar</h3>
             <hr class="small">
             <ul>
               <li><a href="http://www.abookapart.com/products/mobile-first" target="_blank">A Book Apart: Mobile First</a></li>
@@ -413,7 +392,7 @@
           </div>
 
           <div class="column half">
-            <h3>References</h3>
+            <h3>Refer&ecirc;ncias</h3>
             <hr class="small">
             <ul>
               <li><a href="http://opensignal.com/reports/fragmentation-2013/" target="_blank">Android Fragmentation Visualized</a></li>

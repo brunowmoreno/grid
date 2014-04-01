@@ -1,21 +1,21 @@
 ##Grid
 
-A simple guide to responsive design.<br>
-www.adamkaplan.me/grid
+Um guia simples para design responsivo.<br>
+webfatorial.github.io/grid/
 
-####Why bother with responsive?
-We want our websites to be useable on all devices by responding to the user’s behavior, screen size and screen orientation.
+####Por que se importar com responsivo?
+Queremos que nossos sites sejam usáveis em todos os dispositivos, respondendo ao comportamento e tamanho e orientação de tela do visitante.
 
-####A Fragmented World
-As of 2013, there are thousands of different devices and screen sizes that browse the internet, so it's impossible to design layouts to target them all. Instead, we must take a more fluid approach to design.
+####Um mundo fragmentado
+Desde 2013 existem milhares de diferentes dispositivos e tamanhos de tela que acessam a internet, tornando impossível projetar layouts para todos. Ao invés disso, precisamos adotar uma abordagem mais fluida ao design.
 
 ####Mobile First
-The term “mobile first” gets thrown around a lot lately. What it really means is to start with mobile styles and layer on styles optimized for larger screens only as needed. In other words, your mobile styles become the default and you no longer have to override them later. It’s much simpler!
+O termo "mobile first" (móvel primeiro) tem aparecido bastante ultimamente. O que isso realmente significa é começar com os estilos para mobile e ir avançando em estilos otimizados para telas maiores apenas quando necessário. Em outras palavras, seus estilos para dispositivos móveis se tornam o padrão e você não os precisa mais sobrescrever depois. é muito mais simples!
 
-> By assuming a flexible but simple layout by default, you can better guard against browsers—with viewports wide and small—that aren’t quite capable of the full responsive layout. So when we’re talking about layout, “mobile first” really means “progressive enhancement.” —Ethan Marcotte
+> Assumindo um layout flexível, mas simples, por padrão, você pode melhor se resguardar contra navegadores — com viewports pequenas e grandes — que não são totalmente capazes em relação a layout responsivo. Então, quando falamos sobre layout, "mobile first" realmente significa "progressive enhancement" (melhoramento progressivo).
 
-##Min-width Media Queries
-Introduce layout-specific rules only when you need them. Use `min-width` to layer complexity on your layout as the viewport widens. It’s easier to have all the media queries nearby, rather than at the end of the stylesheet or in a separate document.
+##Media queries com min-width
+Introduza regras específicas ao layout somente quando precisar delas. Use `min-width` para lidar com complexidade à medida em que a viewport se torna maior. É mais fácil ter todas as media queries próximas ao invés de no final da folha de estilos ou em documento separado.
 
 ```css
 /* Small screens (default) */
@@ -32,24 +32,26 @@ html { font-size: 100%; }
 }
 ```
 
-##Steps
+##Passos
 
-####1. Not All Browsers are Created Equal
-Browsers will render your CSS differently. To avoid this, it’s a good idea to use a modern alternative to a reset like [Normalize.css](http://necolas.github.io/normalize.css/), which will render elements more consistently cross-browser. Remember to include it as-is before your stylesheet.
+####1. Nem todos os navegadores são iguais
+Navegadores irão renderizar seu CSS de maneira diferente. Para evitar isso, é uma boa ideia usar uma alternativa moderna ao reset, como [Normalize.css](http://necolas.github.io/normalize.css/), que irá renderizar seus elementos mais consistentemente entre os navegadores (cross-browser). Lembre-se de incluí-lo antes de sua folha de estilos.
 
 ```html
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/grid.css">
 ```
 
-####2. Add the Viewport Meta Tag
-Place in the `<head>` of your HTML. This enables use of media queries for cross-device layouts.
+####2. Adicione a meta tag Viewport
+Coloque na `<head>` de seu HTML. Isso habilita o uso de media queries para layouts cross-device.
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
 ####3. Use box-sizing: border-box
-Place at the top of your CSS file. The `*` will target all elements on the page.
+Coloque no início de seu arquivo CSS. O `*` vai afetar todos os elementos na página.
+
 ```css
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -58,8 +60,9 @@ Place at the top of your CSS file. The `*` will target all elements on the page.
 }
 ```
 
-####4. Create a Container
-A container holds all elements and controls the page's maximum width. Using a container will make designing for responsive easier!
+####4. Crie um contêiner
+Um contêiner detém todos os elementos e controla a largura máxima da página. Usando um contêiner você faz de projetos de design responsivo mais fáceis!
+
 ```css
 .container {
   margin: 0 auto;
@@ -74,8 +77,8 @@ A container holds all elements and controls the page's maximum width. Using a co
 </div>
 ```
 
-####5. Create a Column
-With mobile first, columns are `block` level (takes up the full width available) by default. No additional styles needed!
+####5. Crie uma coluna
+Com mobile first, colunas são nível de bloco (`block`), por padrão tomando a largura total disponível. Nenhum estilo adicional é necessário!
 
 ```html
 <div class="container">
@@ -85,8 +88,8 @@ With mobile first, columns are `block` level (takes up the full width available)
 </div>
 ```
 
-####6. Create Column Sizes
-On larger screens, columns gain `float: left` in order to stack content horizontally. Columns now use padding for gutters, so you no longer need to worry about removing margins.
+####6. Crie tamanhos de colunas
+Em telas grandes, colunas obtêm `float: left` a fim de "empilhar" (stack) o conteúdo horizontalmente. Colunas agora usam padding para espaçamento, então você não precisa mais se preocupar em remover margens.
 
 ```html
 <div class="container">
@@ -118,8 +121,8 @@ On larger screens, columns gain `float: left` in order to stack content horizont
 }
 ```
 
-####7. Create Rows
-Columns are wrapped in rows to prevent other elements from stacking next to them, otherwise know as clearing issues. Rows are cleared using the popular `clearfix`, which was created by [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/).
+####7. Crie linhas
+Colunas são envoltas em linhas para evitar que outros elementos fiquem "empilhados" (stacking) próximo a elas, isso também conhecido como "questões de limpeza" (clearing issues). Linhas recebem clear usando o popular `clearfix`, criado por [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/).
 
 ```html
 <div class="container">
@@ -159,8 +162,8 @@ Columns are wrapped in rows to prevent other elements from stacking next to them
 }
 ```
 
-#### Flow Opposite
-Add the class `.flow-opposite` to columns where you want content to display first on mobile but appear on the right on larger screens.
+#### Fluxo oposto
+Adicione a classe `.flow-opposite` em colunas nas quais você quer o conteúdo apareça primeiro em mobile, mas apareçam à direita em telas maiores.
 
 ```html
 <div class="container">
@@ -181,7 +184,7 @@ Add the class `.flow-opposite` to columns where you want content to display firs
 }
 ```
 
-####Further Reading
+####Leitura Complementar
 * [A Book Apart: Mobile First](http://www.abookapart.com/products/mobile-first)
 * [A Book Apart: Responsive Web Design](http://www.abookapart.com/products/responsive-web-design)
 * [Beginner’s Guide to Responsive Web Design](http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design)
@@ -190,7 +193,7 @@ Add the class `.flow-opposite` to columns where you want content to display firs
 * [The Many Faces of ‘Mobile First’](http://bradfrostweb.com/blog/mobile/the-many-faces-of-mobile-first/)
 * [Understanding the Humble Clearfix](http://fuseinteractive.ca/blog/understanding-humble-clearfix)
 
-####References
+####Referências
 * [Android Fragmentation Visualized](http://opensignal.com/reports/fragmentation-2013/)
 * [Animate.css](http://daneden.github.io/animate.css/)
 * [Box Model](http://developer.mozilla.org/en-US/docs/Web/CSS/box_model)
